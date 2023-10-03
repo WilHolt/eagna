@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@undefined/frameless": ["dist/libs/frameless"],
+      "@undefined/frameless/*": ["dist/libs/frameless/dist/components/*"],
+      "@undefined/frameless/loader": ["dist/libs/frameless/loader"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
