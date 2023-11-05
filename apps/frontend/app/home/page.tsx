@@ -1,5 +1,7 @@
-import { HomeModule } from "../modules/home/home.module";
+import { HomeModule } from '../modules/home/home.module';
 
-const Home = () => (<HomeModule></HomeModule>)
+const Home = () => {
+  return <HomeModule></HomeModule>;
+};
 
-export default Home; 
+export default Home;

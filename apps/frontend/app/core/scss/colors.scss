@@ -1,0 +1,78 @@
+@use 'sass:map';
+
+$primary_pure: 'primary_pure';
+$primary_up: 'primary_up';
+$primary_down: 'primary_down';
+$primary_deep: 'primary_deep';
+$secondary_pure: 'secondary_pure';
+$secondary_down: 'secondary_down';
+$secondary_deep: 'secondary_deep';
+$neutral_9: 'neutral_9';
+$neutral_8: 'neutral_8';
+$neutral_7: 'neutral_7';
+$neutral_6: 'neutral_6';
+$neutral_5: 'neutral_5';
+$neutral_4: 'neutral_4';
+$neutral_3: 'neutral_3';
+$neutral_2: 'neutral_2';
+$neutral_1: 'neutral_1';
+$neutral_03: 'neutral_03';
+$neutral_02: 'neutral_02';
+$neutral_01: 'neutral_01';
+$pure_white: 'pure_white';
+$pure_black: 'pure_black';
+$pure_red: 'pure_red';
+$base_colors: (
+  $primary_pure: #665bd5,
+  $primary_up: #f2f1f8,
+  $primary_down: #4d44f5,
+  $primary_deep: #282590,
+  $secondary_pure: #44f49a,
+  $secondary_down: #06c96f,
+  $secondary_deep: #105f39,
+  $neutral_9: #2d2a4b,
+  $neutral_8: #211f3d,
+  $neutral_7: #3a3857,
+  $neutral_6: #4a4764,
+  $neutral_5: #55536d,
+  $neutral_4: #626079,
+  $neutral_3: #6d6b82,
+  $neutral_2: #7a798e,
+  $neutral_1: #888699,
+  $neutral_03: #ededf0,
+  $neutral_02: #f6f6f7,
+  $neutral_01: #fbfbfb,
+  $pure_white: white,
+  $pure_black: black,
+  $pure_red: #eb5757,
+);
+
+$nav_text_default: 'nav_text_default';
+$nav_text_hover: 'nav_text_hover';
+$nav_logo_text: 'nav_logo_text';
+$feature_card_title: '$feature_card_title';
+$feature_card_subtitle: '$feature_card_subtitle';
+
+@function Color($color) {
+  @return map.get($colors, $color);
+}
+
+@function getBaseColor($color) {
+  @return map.get($base_colors, $color);
+}
+
+$colors: (
+  $nav_text_default: getBaseColor($neutral_2),
+  $nav_text_hover: getBaseColor($neutral_7),
+  $nav_logo_text: getBaseColor($primary_pure),
+  $feature_card_title: getBaseColor($neutral_9),
+  $feature_card_subtitle: getBaseColor($neutral_4),
+);
+
+@mixin Color($color) {
+  color: Color($color);
+}
+
+@mixin BackgroundColor($color) {
+  background-color: Color($color);
+}

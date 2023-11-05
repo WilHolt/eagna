@@ -1,0 +1,90 @@
+@import '../../../core/scss/globals.scss';
+
+.container {
+  display: flex;
+  justify-content: center;
+  max-width: 1920px;
+  width: 100%;
+}
+.header_wrapper {
+  max-width: 1920px;
+  display: flex;
+  padding: 10px 20px;
+  justify-content: center;
+  width: 100%;
+  gap: 60px;
+  flex-direction: column-reverse;
+  @include medium {
+    padding: 20px 40px;
+    flex-direction: row;
+  }
+  @include large {
+    padding: 60px 80px;
+  }
+  @include xlarge {
+    padding: 60px 160px;
+    flex-direction: row;
+  }
+  .circle_wrapper {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    @include medium {
+      display: flex;
+    }
+    @include large {
+      display: flex;
+    }
+    @include xlarge {
+      display: flex;
+    }
+  }
+  .text_wrapper {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+    .h1_cta {
+      width: 100%;
+      font-size: 24px;
+      font-weight: 900;
+      color: getBaseColor($neutral_9);
+      white-space: pre-wrap;
+      width: 100%;
+      // max-width: 400px;
+      .purple_mark {
+        color: getBaseColor($primary_pure);
+      }
+      .red_mark {
+        color: getBaseColor($pure_red);
+      }
+
+      @include medium {
+        font-size: 32px;
+      }
+
+      @include xlarge {
+        font-size: 48px;
+        max-width: 800px;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 300;
+      color: getBaseColor($neutral_7);
+      max-width: 400px;
+      margin-bottom: 40px;
+      @include medium {
+        font-size: 18px;
+      }
+
+      @include xlarge {
+        font-size: 24px;
+      }
+    }
+  }
+}

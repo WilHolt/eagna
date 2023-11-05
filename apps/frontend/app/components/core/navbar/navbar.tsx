@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './navbar.module.scss';
 import Image from 'next/image';
+import Link from 'next/link';
 const { logo_wrapper, nav_wrapper, menu_list_wrapper , logo_text } = styles;
 export const Navbar = () => (
   <nav className={nav_wrapper}>
@@ -14,11 +15,10 @@ export const Navbar = () => (
       <div className={logo_text}>Eagna</div>
     </div>
     <ul className={menu_list_wrapper}>
-        <li>Inicio</li>
-        <li>Como Funciona?</li>
-        <li>Nossos Professores</li>
-        <li>Perguntas Frequentes</li>
-        <li>Contato</li>
+        <li><Link href={""}>Inicio</Link></li>
+        <li><Link href={""}>Como Funciona?</Link></li>
+        <li><Link href={""}>Perguntas Frequentes</Link></li>
+        <li><Link href={""}>Contato</Link></li>
     </ul>
   </nav>
 );

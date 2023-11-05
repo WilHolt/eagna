@@ -1,0 +1,28 @@
+@import '../../../core/scss/globals.scss';
+
+.wrapper {
+  width: 100%;
+  max-width: 350px;
+
+  .title_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    span {
+      font-size: 14px;
+      font-weight: 700;
+      color: getBaseColor($neutral_9);
+      @include large {
+        font-size: 20px;
+      }
+    }
+  }
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    color: getBaseColor($neutral_4);
+    @include large {
+      font-size: 20px;
+    }
+  }
+}

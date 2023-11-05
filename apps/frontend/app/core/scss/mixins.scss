@@ -1,0 +1,23 @@
+// $small-screen-size: 360px;
+$medium-screen-size: 768px;
+$large-screen-size: 1336px;
+$xlarge-screen-size: 1920px;
+
+
+@mixin medium {
+    @media(min-width: #{$medium-screen-size}) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media(min-width: #{$large-screen-size}) {
+        @content;
+    }
+}
+
+@mixin xlarge {
+    @media(min-width: #{$xlarge-screen-size}) {
+        @content;
+    }
+}

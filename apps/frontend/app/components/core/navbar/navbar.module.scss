@@ -1,9 +1,22 @@
+@import '../../../core/scss/globals';
+
 .nav_wrapper {
   display: flex;
   gap: 8px;
-  padding: 24px;
+  padding: 24px 20px;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 1920px;
+  @include medium {
+    padding: 24px 40px;
+  }
+  @include large {
+    padding: 24px 80px;
+  }
+  @include xlarge {
+    padding: 24px 160px;
+  }
 }
 
 .logo_wrapper {
@@ -15,7 +28,8 @@
 .logo_text {
   font-family: 'Inter';
   font-weight: 700;
-  color: #665bd5;
+  color: Color($nav_logo_text);
+  @debug Color($nav_logo_text);
   font-size: 24px;
   line-height: 1.2;
 }
@@ -26,9 +40,19 @@
   gap: 48px;
   list-style: none;
   font-family: 'Inter';
+  line-height: 120%;
   font-weight: 300;
+  display: none;
+  @include medium {
+    display: flex;
+  }
   li {
     font-size: 14px;
-    color: #7a798e;
+    color: Color($nav_text_default);
+    &:hover {
+      font-weight: 500;
+      color: Color($nav_text_hover);
+      transition: 300ms all;
+    }
   }
 }

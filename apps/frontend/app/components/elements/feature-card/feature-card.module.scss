@@ -1,0 +1,36 @@
+@import '../../../core/scss/globals.scss';
+
+.feature_card_wrapper {
+  width: fit-content;
+  background: white;
+  border-radius: 15px;
+  padding: 16px 32px;
+  box-shadow: 15px 0 50px 0 rgb(52, 48, 99, 0.15);
+  white-space: pre-wrap;
+  display: flex;
+  gap: 16px;
+  width: fit-content;
+  max-width: 350px;
+  min-width: 350px;
+  .title {
+    font-size: 14px;
+    @include Color($feature_card_title);
+    font-weight: 700;
+    @include large {
+      font-size: 16px;
+    }
+  }
+  .subtitle {
+    font-size: 12px;
+    @include Color($feature_card_subtitle);
+    font-weight: 400;
+    @include large {
+      font-size: 16px;
+    }
+  }
+  .text_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
