@@ -1,13 +1,9 @@
 import { MoreFeatureItem } from '../../elements/more-feature-item/more-feature-item';
+import { Tittle } from '../../elements/title/title';
 import styles from './more-features.module.scss';
 export const MoreFeatures = () => (
   <div className={styles.more_features_wrapper}>
-    <div className={styles.title_wrapper}>
-      <h2 className={styles.title}>Ainda tem dúvidas?</h2>
-      <p className={styles.subtitle}>
-        Veja comentários reais dos nossos alunos sobre a metodologia eagna!
-      </p>
-    </div>
+    <Tittle title="Ainda tem dúvidas?" subtitle="Veja comentários reais dos nossos alunos sobre a metodologia eagna!"></Tittle>
     <div className={styles.text_wrapper}>
       <p className={styles.text_content}>
         <span>Já basta o estresse do dia dia</span>

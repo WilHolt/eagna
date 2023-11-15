@@ -12,7 +12,7 @@ export const HeaderCTA = () => (
       <div className={styles.text_wrapper}>
         <h1 className={styles.h1_cta}>
           SEU <span className={styles.purple_mark}>FILHO</span> MERECE UMA VIDA
-          ESCOLAR <span className={styles.red_mark}>SFORIMENTO!</span>
+          ESCOLAR SEM <span className={styles.red_mark}>SOFRIMENTO!</span>
         </h1>
         <p>
           Nossa metodologia é pensada para atingir seu objetivo com a menor

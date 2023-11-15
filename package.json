@@ -20,6 +20,7 @@
     "react-dom": "18.2.0",
     "rxjs": "~7.8.0",
     "superjson": "^1.12.3",
+    "swiper": "^11.0.4",
     "tslib": "^2.3.0",
     "zod": "^3.21.4",
     "zone.js": "~0.13.0"
@@ -36,10 +37,7 @@
     "@nx/vite": "16.9.1",
     "@nx/web": "16.9.1",
     "@nx/workspace": "16.9.1",
-    "@nxext/stencil": "^16.3.0",
     "@playwright/test": "^1.36.0",
-    "@stencil/core": "^3.4.0",
-    "@stencil/sass": "3.0.0",
     "@testing-library/react": "14.0.0",
     "@types/jest": "^29.4.0",
     "@types/node": "18.14.2",
@@ -74,4 +72,3 @@
     "vitest": "^0.32.2"
   }
 }
-

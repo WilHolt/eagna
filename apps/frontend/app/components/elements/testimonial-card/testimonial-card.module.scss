@@ -1,0 +1,39 @@
+@import '../../../core/scss/globals.scss';
+
+.wrapper {
+  background-color: white;
+  @include shadow-1;
+  padding: 100px 35px 40px 70px;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  width: fit-content;
+  .quotes {
+    position: absolute;
+    left: 40px;
+    top: 44px;
+  }
+  .text_wrapper {
+    p {
+      font-family: 'Inter';
+      color: getBaseColor($neutral_6);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      @include medium {}
+    }
+  }
+  .author {
+    span {
+      color: getBaseColor($primary_deep);
+      font-family: 'Inter';
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 32px; /* 160% */
+    }
+  }
+}
