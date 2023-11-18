@@ -18,12 +18,13 @@
   }
 
   .box {
+    width: 100%;
     height: fit-content;
     background: getBaseColor($primary_down);
     display: flex;
     flex-direction: column;
     border-radius: 30px;
-    padding: 0 40px;
+    padding: 0 80px;
     align-items: center;
     justify-content: center;
     width: fit-content;

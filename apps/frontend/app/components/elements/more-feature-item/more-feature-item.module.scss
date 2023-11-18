@@ -13,16 +13,16 @@
       font-weight: 700;
       color: getBaseColor($neutral_9);
       @include large {
-        font-size: 20px;
+        font-size: 16px;
       }
     }
   }
   p {
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     color: getBaseColor($neutral_4);
     @include large {
-      font-size: 20px;
+      font-size: 14px;
     }
   }
 }
