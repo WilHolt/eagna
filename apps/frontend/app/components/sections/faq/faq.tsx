@@ -5,31 +5,32 @@ import styles from './faq.module.scss';
 export const Faq = () => (
   <div className={styles.wrapper}>
     <Tittle
-      title="Agende suas aulas agora mesmo"
-      subtitle="Entre em contato diretamente pelo whatsapp e marque suas aulas"
+      title="Perguntas Frequentes"
+      subtitle="Aqui explicamos as perguntas mais frequentespara que você
+      não tenha duvidasque está fazendo o certo!"
     ></Tittle>
     <div className={styles.faq_list}>
       <FaqItem
         question="Como é a metodoliga EAGNA?"
         awnser="Aqui explicamos as perguntas mais frequentespara que você não tenha duvidasque está fazendo o certo, Aqui explicamos as perguntas mais frequentespara que você não tenha duvidasque está fazendo o certo,  Aqui explicamos as perguntas mais requentespara que você não tenha duvidasque está fazendo o certo, "
       ></FaqItem>
-            <FaqItem
+      <FaqItem
         question="Como é a metodoliga EAGNA?"
         awnser="Aqui explicamos as perguntas mais frequentespara que você não tenha duvidasque está fazendo o certo, Aqui explicamos as perguntas mais frequentespara que você não tenha duvidasque está fazendo o certo,  Aqui explicamos as perguntas mais requentespara que você não tenha duvidasque está fazendo o certo, "
       ></FaqItem>
-            <FaqItem
+      <FaqItem
         question="Como é a metodoliga EAGNA?"
         awnser="Aqui explicamos as perguntas mais frequentespara que você não tenha duvidasque está fazendo o certo, Aqui explicamos as perguntas mais frequentespara que você não tenha duvidasque está fazendo o certo,  Aqui explicamos as perguntas mais requentespara que você não tenha duvidasque está fazendo o certo, "
       ></FaqItem>
-            <FaqItem
+      <FaqItem
         question="Como é a metodoliga EAGNA?"
         awnser="Aqui explicamos as perguntas mais frequentespara que você não tenha duvidasque está fazendo o certo, Aqui explicamos as perguntas mais frequentespara que você não tenha duvidasque está fazendo o certo,  Aqui explicamos as perguntas mais requentespara que você não tenha duvidasque está fazendo o certo, "
       ></FaqItem>
-            <FaqItem
+      <FaqItem
         question="Como é a metodoliga EAGNA?"
         awnser="Aqui explicamos as perguntas mais frequentespara que você não tenha duvidasque está fazendo o certo, Aqui explicamos as perguntas mais frequentespara que você não tenha duvidasque está fazendo o certo,  Aqui explicamos as perguntas mais requentespara que você não tenha duvidasque está fazendo o certo, "
       ></FaqItem>
-            <FaqItem
+      <FaqItem
         question="Como é a metodoliga EAGNA?"
         awnser="Aqui explicamos as perguntas mais frequentespara que você não tenha duvidasque está fazendo o certo, Aqui explicamos as perguntas mais frequentespara que você não tenha duvidasque está fazendo o certo,  Aqui explicamos as perguntas mais requentespara que você não tenha duvidasque está fazendo o certo, "
       ></FaqItem>
