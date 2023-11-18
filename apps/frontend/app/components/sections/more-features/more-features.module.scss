@@ -24,6 +24,7 @@
     align-items: center;
     flex-direction: column;
     gap: 40px;
+    flex: 1;
     @include large {
       flex-direction: row;
     }
@@ -47,6 +48,7 @@
     }
   }
   .feature_items_wrapper {
+    flex: 1;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 3.5fr));

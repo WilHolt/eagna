@@ -18,8 +18,6 @@ export const Testimonials = () => (
       className={styles.swiper}
       spaceBetween={40}
       slidesPerView={'auto'}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
     >
       <SwiperSlide className={styles.swiper_slide}>
         <TestimonialCard></TestimonialCard>

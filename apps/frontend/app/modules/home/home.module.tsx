@@ -5,11 +5,15 @@ import { MoreFeatures } from '../../components/sections/more-features/more-featu
 import styles from './home.module.scss'
 import { TestimonialCard } from '../../components/elements/testimonial-card/testimonial-card';
 import { Testimonials } from '../../components/sections/testimonials/testimonials';
+import { OrderNow } from '../../components/sections/order-now/order-now';
+import { Statistics } from '../../components/sections/statistics/statistics';
 export const HomeModule = () => (
   <div className={styles.home_wrapper}>
     <Navbar></Navbar>
     <HeaderCTA></HeaderCTA>
     <MoreFeatures></MoreFeatures>
     <Testimonials></Testimonials>
+    <OrderNow></OrderNow>
+    <Statistics></Statistics>
   </div>
 );
