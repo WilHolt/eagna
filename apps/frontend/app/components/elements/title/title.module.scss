@@ -8,7 +8,7 @@
     text-align: center;
 
     .title {
-      font-size: 18px;
+      font-size: 20px;
       font-weight: 700;
       color: getBaseColor($neutral_9);
 
@@ -21,12 +21,12 @@
       }
     }
     .subtitle {
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 300;
       color: getBaseColor($neutral_3);
 
       @include medium {
-        font-size: 16px;
+        font-size: 18px;
       }
 
       @include large {
