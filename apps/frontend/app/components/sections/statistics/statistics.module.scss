@@ -6,7 +6,7 @@
   padding: 20px 40px;
   align-items: center;
   justify-self: center;
-  width: 100%;
+  width: fit-content;
   gap: 20px;
   @include medium {
     gap: 40px;
@@ -24,15 +24,18 @@
     display: flex;
     flex-direction: column;
     border-radius: 30px;
-    padding: 0 80px;
+    padding: 0 20px;
     align-items: center;
     justify-content: center;
-    width: fit-content;
 
+    @media (min-width: 450px) {
+      flex-direction: row;
+    }
     @include medium {
-    flex-direction: row;
+      padding: 0 40px;
     }
     @include large {
+      padding: 0 80px;
       flex-direction: row;
       width: fit-content;
     }
@@ -41,8 +44,10 @@
       flex-direction: column;
       align-items: center;
       justify-self: center;
-      padding: 40px;
-      @include medium {
+      padding: 20px;
+
+      @media (min-width: 450px) {
+        padding: 40px;
         &.dashed {
           border-right: 1px dashed rgba(255, 255, 255, 0.482);
           border-left: 1px dashed rgba(255, 255, 255, 0.482);
@@ -51,14 +56,21 @@
       .count {
         font-family: 'Inter';
         color: WHITE;
-        font-size: 48px;
+        font-size: 32px;
         line-height: 100%;
         font-weight: 700;
+        @include large {
+          font-size: 48px;
+        }
       }
       .label {
         font-family: 'Inter';
         color: white;
-        font-size: 24px;
+        font-size: 16px;
+        text-wrap: nowrap;
+        @include large {
+          font-size: 24px;
+        }
       }
     }
   }
