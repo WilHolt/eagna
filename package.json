@@ -8,6 +8,7 @@
   "private": true,
   "dependencies": {
     "@nx/next": "16.9.1",
+    "antd": "^5.14.0",
     "front-matter": "^4.0.2",
     "isomorphic-fetch": "^3.0.0",
     "marked": "^5.0.2",
@@ -22,6 +23,7 @@
     "superjson": "^1.12.3",
     "swiper": "^11.0.4",
     "tslib": "^2.3.0",
+    "usehooks-ts": "^2.13.0",
     "zod": "^3.21.4",
     "zone.js": "~0.13.0"
   },

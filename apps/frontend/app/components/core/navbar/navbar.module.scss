@@ -35,16 +35,15 @@
 }
 
 .menu_list_wrapper {
-  text-decoration: none;
+  
+  @include medium {
+   text-decoration: none;
   display: inline-flex;
   gap: 48px;
   list-style: none;
   font-family: 'Inter';
   line-height: 120%;
   font-weight: 300;
-  display: none;
-  @include medium {
-    display: flex;
   }
   li {
     font-size: 14px;

@@ -400,3 +400,23 @@ summary svg {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+/* wil */
+
+.ant-drawer-header {
+  border: none !important;
+  padding: 24px 20px !important;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+}
+.ant-drawer-header-title {
+  flex: initial !important;
+}
+.ant-drawer-body {
+  padding: 0 !important;
+}
+
+.ant-menu-item {
+  text-align: center;
+}
